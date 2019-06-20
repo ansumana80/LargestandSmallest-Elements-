@@ -12,13 +12,16 @@ public class Main
         for(int i=1; i<ansu.length; i++)
         {
             if(ansu[i]>largest)
-                largest=ansu[i];
-            else if (ansu[i]<smallest)
-                smallest=ansu[i];
-
+            {largest=ansu[i];}
+        }
+        for(int i=1; i<ansu.length; i++)
+        {
+            if(ansu[i]<smallest)
+            {smallest=ansu[i];}
         }
 
         System.out.println("Largest Number is : " + largest);
         System.out.println("Smallest Number is : " + smallest);
+
     }
 }
